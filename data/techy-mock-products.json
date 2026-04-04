@@ -1,0 +1,124 @@
+{
+  "brand": "Techy",
+  "currency": "USD",
+  "featuredProducts": [
+    {
+      "id": "cp-001",
+      "name": "iPhone 15 Pro Max",
+      "category": "Phones",
+      "brand": "Apple",
+      "price": 1199,
+      "originalPrice": 1299,
+      "discountPercent": 8,
+      "rating": 4.9,
+      "stock": 12,
+      "badge": "Best Seller",
+      "image": "./assets/images/products/iphone-15-pro-max.png",
+      "description": "Powerful flagship phone with premium titanium design and pro-level camera system."
+    },
+    {
+      "id": "cp-002",
+      "name": "Samsung Galaxy S24 Ultra",
+      "category": "Phones",
+      "brand": "Samsung",
+      "price": 1099,
+      "originalPrice": 1249,
+      "discountPercent": 12,
+      "rating": 4.8,
+      "stock": 9,
+      "badge": "Hot Deal",
+      "image": "./assets/images/products/galaxy-s24-ultra.png",
+      "description": "High-end Android phone with AI features, excellent zoom camera, and stylus support."
+    },
+    {
+      "id": "cp-003",
+      "name": "Xiaomi 14",
+      "category": "Phones",
+      "brand": "Xiaomi",
+      "price": 799,
+      "originalPrice": 899,
+      "discountPercent": 11,
+      "rating": 4.7,
+      "stock": 15,
+      "badge": "Popular",
+      "image": "./assets/images/products/xiaomi-14.png",
+      "description": "Strong performance and flagship feel at a more accessible price point."
+    },
+    {
+      "id": "cp-004",
+      "name": "OPPO Reno11 Pro",
+      "category": "Phones",
+      "brand": "OPPO",
+      "price": 649,
+      "originalPrice": 729,
+      "discountPercent": 11,
+      "rating": 4.6,
+      "stock": 20,
+      "badge": "New Arrival",
+      "image": "./assets/images/products/oppo-reno11-pro.png",
+      "description": "Stylish mid-premium smartphone with solid camera quality and fast charging."
+    },
+    {
+      "id": "cp-005",
+      "name": "AirPods Pro 2",
+      "category": "Audio",
+      "brand": "Apple",
+      "price": 229,
+      "originalPrice": 249,
+      "discountPercent": 8,
+      "rating": 4.8,
+      "stock": 30,
+      "badge": "Top Rated",
+      "image": "./assets/images/products/airpods-pro-2.png",
+      "description": "Wireless earbuds with strong noise cancellation and seamless ecosystem pairing."
+    },
+    {
+      "id": "cp-006",
+      "name": "Anker 67W GaN Charger",
+      "category": "Accessories",
+      "brand": "Anker",
+      "price": 49,
+      "originalPrice": 59,
+      "discountPercent": 17,
+      "rating": 4.7,
+      "stock": 45,
+      "badge": "Value Pick",
+      "image": "./assets/images/products/anker-67w-gan.png",
+      "description": "Compact fast charger for phones, tablets, and lightweight laptops."
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-001",
+      "name": "Phones",
+      "icon": "📱",
+      "description": "Latest smartphones from top brands."
+    },
+    {
+      "id": "cat-002",
+      "name": "Laptops",
+      "icon": "💻",
+      "description": "Portable power for work, study, and play."
+    },
+    {
+      "id": "cat-003",
+      "name": "Audio",
+      "icon": "🎧",
+      "description": "Earbuds, headphones, speakers, and more."
+    },
+    {
+      "id": "cat-004",
+      "name": "Accessories",
+      "icon": "🔌",
+      "description": "Chargers, cables, cases, and everyday tech gear."
+    }
+  ],
+  "campaignBanner": {
+    "eyebrow": "Limited-time deal",
+    "title": "Save up to 25% on selected phones and accessories",
+    "description": "Grab special offers this week on popular smartphones, chargers, and wireless audio gear.",
+    "primaryButtonText": "Shop deals",
+    "secondaryButtonText": "View products",
+    "startingPrice": 49
+  }
+}

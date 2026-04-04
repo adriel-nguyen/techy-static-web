@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Techy - Login / Register</title>
+        <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/auth.css">
+    </head>
+    <body class="auth-page">
+        <main class="auth">
+            <div class="auth__container">
+                <div class="auth__intro">
+                    <a href="./index.html" class="auth__brand">
+                        <img src="./assets/images/techy-symbol.svg" alt="Techy logo" class="auth__logo">
+                        <span class="auth__brand-text">Techy</span>
+                    </a>
+
+                    <p class="auth__eyebrow">Welcome to Techy</p>
+                    <h1 class="auth__title">Shop smarter with your Techy account</h1>
+                    <p class="auth__description">
+                        Sign in to manage orders, save favorites, and get access to exclusive tech deals.
+                    </p>
+
+                    <div class="auth__highlights">
+                        <div class="auth__highlight">
+                            <span class="auth__highlight-icon">⚡</span>
+                            <div>
+                                <h2 class="auth__highlight-title">Fast checkout</h2>
+                                <p class="auth__highlight-text">Save your details and complete orders faster.</p>
+                            </div>
+                        </div>
+
+                        <div class="auth__highlight">
+                            <span class="auth__highlight-icon">🎁</span>
+                            <div>
+                                <h2 class="auth__highlight-title">Member deals</h2>
+                                <p class="auth__highlight-text">Unlock promotions and special product offers.</p>
+                            </div>
+                        </div>
+
+                        <div class="auth__highlight">
+                            <span class="auth__highlight-icon">📦</span>
+                            <div>
+                                <h2 class="auth__highlight-title">Order tracking</h2>
+                                <p class="auth__highlight-text">Check your purchases and delivery status anytime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="auth__panel">
+                    <div class="auth__tabs">
+                        <button class="auth__tab auth__tab--active" type="button" data-auth-tab="login">Login</button>
+                        <button class="auth__tab" type="button" data-auth-tab="register">Register</button>
+                    </div>
+
+                    <div class="auth__form-wrap auth__form-wrap--active" id="loginFormWrap">
+                        <div class="auth__mode-switch">
+                            <button type="button" class="auth__mode-button auth__mode-button--active" data-mode-target="login" data-mode="email">Email</button>
+                            <button type="button" class="auth__mode-button" data-mode-target="login" data-mode="phone">Phone</button>
+                        </div>
+
+                        <h2 class="auth__form-title">Login to your account</h2>
+                        <p class="auth__form-subtitle">Enter your details to continue shopping.</p>
+
+                        <form class="auth__form" id="loginForm" novalidate>
+                            <div class="auth__field auth__field--mode auth__field--active" data-mode-panel="login-email">
+                                <label class="auth__label" for="loginEmail">Email</label>
+                                <input class="auth__input" type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email">
+                                <p class="auth__error" id="loginEmailError"></p>
+                            </div>
+
+                            <div class="auth__field auth__field--mode" data-mode-panel="login-phone">
+                                <label class="auth__label" for="loginPhone">Phone number</label>
+                                <div class="auth__phone-group">
+                                    <select class="auth__select" id="loginCountryCode" name="loginCountryCode">
+                                        <option value="">Code</option>
+                                    </select>
+                                    <input
+                                        class="auth__input"
+                                        type="tel"
+                                        id="loginPhone"
+                                        name="loginPhone"
+                                        placeholder="Enter phone number"
+                                        inputmode="numeric"
+                                        pattern="[0-9]*"
+                                        maxlength="15"
+                                        autocomplete="tel-national"
+                                    >
+                                </div>
+                                <p class="auth__hint">Example: country code + local number</p>
+                                <p class="auth__error" id="loginPhoneError"></p>
+                            </div>
+
+                            <div class="auth__field">
+                                <label class="auth__label" for="loginPassword">Password</label>
+                                <input class="auth__input" type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password">
+                                <p class="auth__error" id="loginPasswordError"></p>
+                            </div>
+
+                            <div class="auth__row">
+                                <label class="auth__check">
+                                    <input type="checkbox" class="auth__check-input">
+                                    <span class="auth__check-text">Remember me</span>
+                                </label>
+
+                                <a href="#" class="auth__link">Forgot password?</a>
+                            </div>
+
+                            <button class="auth__button auth__button--primary" type="submit">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="auth__form-wrap" id="registerFormWrap">
+                        <div class="auth__mode-switch">
+                            <button type="button" class="auth__mode-button auth__mode-button--active" data-mode-target="register" data-mode="email">Email</button>
+                            <button type="button" class="auth__mode-button" data-mode-target="register" data-mode="phone">Phone</button>
+                        </div>
+
+                        <h2 class="auth__form-title">Create an account</h2>
+                        <p class="auth__form-subtitle">Join Techy and enjoy a better shopping experience.</p>
+
+                        <form class="auth__form" id="registerForm" novalidate>
+                            <div class="auth__field">
+                                <label class="auth__label" for="registerName">Full name</label>
+                                <input class="auth__input" type="text" id="registerName" name="registerName" placeholder="Enter your full name">
+                                <p class="auth__error" id="registerNameError"></p>
+                            </div>
+
+                            <div class="auth__field auth__field--mode auth__field--active" data-mode-panel="register-email">
+                                <label class="auth__label" for="registerEmail">Email</label>
+                                <input class="auth__input" type="email" id="registerEmail" name="registerEmail" placeholder="Enter your email">
+                                <p class="auth__error" id="registerEmailError"></p>
+                            </div>
+
+                            <div class="auth__field auth__field--mode" data-mode-panel="register-phone">
+                                <label class="auth__label" for="registerPhone">Phone number</label>
+                                <div class="auth__phone-group">
+                                    <select class="auth__select" id="registerCountryCode" name="registerCountryCode">
+                                        <option value="">Code</option>
+                                    </select>
+                                    <input
+                                        class="auth__input"
+                                        type="tel"
+                                        id="registerPhone"
+                                        name="registerPhone"
+                                        placeholder="Enter phone number"
+                                        inputmode="numeric"
+                                        pattern="[0-9]*"
+                                        maxlength="15"
+                                        autocomplete="tel-national"
+                                    >
+                                </div>
+                                <p class="auth__hint">Example: country code + local number</p>
+                                <p class="auth__error" id="registerPhoneError"></p>
+                            </div>
+
+                            <div class="auth__field">
+                                <label class="auth__label" for="registerPassword">Password</label>
+                                <input class="auth__input" type="password" id="registerPassword" name="registerPassword" placeholder="Create a password">
+                                <p class="auth__error" id="registerPasswordError"></p>
+                            </div>
+
+                            <div class="auth__field">
+                                <label class="auth__label" for="registerConfirmPassword">Confirm password</label>
+                                <input class="auth__input" type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Confirm your password">
+                                <p class="auth__error" id="registerConfirmPasswordError"></p>
+                            </div>
+
+                            <label class="auth__check">
+                                <input type="checkbox" class="auth__check-input" id="registerTerms">
+                                <span class="auth__check-text">I agree to the Terms and Privacy Policy</span>
+                            </label>
+                            <p class="auth__error" id="registerTermsError"></p>
+
+                            <button class="auth__button auth__button--primary" type="submit">Create account</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script src="./js/auth.js"></script>
+    </body>
+</html>

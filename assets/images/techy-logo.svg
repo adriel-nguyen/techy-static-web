@@ -1,0 +1,30 @@
+<svg width="960" height="240" viewBox="0 0 960 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="techyGrad" x1="30" y1="30" x2="210" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="260" y1="50" x2="780" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="260" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1D4ED8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="240" rx="32" fill="white"/>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="30" width="180" height="180" rx="40" fill="url(#techyGrad)"/>
+    <path d="M67 78H173" stroke="white" stroke-width="16" stroke-linecap="round"/>
+    <path d="M120 78V162" stroke="white" stroke-width="16" stroke-linecap="round"/>
+    <path d="M81 118H159" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+    <circle cx="160" cy="160" r="16" fill="white" opacity="0.95"/>
+    <path d="M160 176V188" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M176 160H188" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <text x="255" y="150" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="96" font-weight="800" letter-spacing="0.5" fill="url(#textGrad)">Techy</text>
+  <text x="261" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="4" fill="#38BDF8">TECH SHOP</text>
+</svg>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Techy - Homepage</title>
+        <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
+        
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="header__container">
+                <a href="#" class="header__brand">
+                    <img
+                        src="./assets/images/techy-symbol.svg"
+                        alt="Techy logo"
+                        class="header__logo"
+                    >
+                    <span class="header__brand-text">Techy</span>
+                </a>
+
+                <nav class="header__nav">
+                    <a href="#" class="header__nav-link header__nav-link--active">Home</a>
+                    <a href="#" class="header__nav-link">Products</a>
+                    <a href="#" class="header__nav-link">Deals</a>
+                    <a href="#" class="header__nav-link">About</a>
+                    <a href="#" class="header__nav-link">Contact</a>
+                </nav>
+
+                <div class="header__actions">
+                    <form class="header__search" action="#">
+                        <span class="header__search-icon">⌕</span>
+                        <input
+                            type="text"
+                            class="header__search-input"
+                            placeholder="Search gadgets..."
+                        >
+                    </form>
+
+                    <button class="header__icon-button" type="button" aria-label="Cart">🛒</button>
+                    <button class="header__menu-button" type="button" id="menuBtn" aria-label="Open menu">☰</button>
+                </div>
+            </div>
+
+            <div class="header__mobile-panel" id="mobilePanel">
+                <div class="header__mobile-inner">
+                    <form class="header__mobile-search" action="#">
+                        <input
+                            type="text"
+                            class="header__mobile-search-input"
+                            placeholder="Search gadgets..."
+                        >
+                    </form>
+
+                    <div class="header__mobile-links">
+                        <a href="#" class="header__mobile-link">Home</a>
+                        <a href="#" class="header__mobile-link">Products</a>
+                        <a href="#" class="header__mobile-link">Deals</a>
+                        <a href="#" class="header__mobile-link">About</a>
+                        <a href="#" class="header__mobile-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__card">
+                    <p class="hero__eyebrow">Smart Tech. Better Prices.</p>
+                    <h1 class="hero__title">Upgrade your setup with Techy</h1>
+                    <p class="hero__description">
+                        Discover gadgets, accessories, and daily tech deals in a clean modern shopping experience.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#" class="hero__button hero__button--primary">Shop now</a>
+                        <a href="#" class="hero__button hero__button--secondary">View deals</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="promo__container">
+                <div class="promo__grid">
+                    <article class="promo__card">
+                        <span class="promo__label">Fast delivery</span>
+                        <h2 class="promo__title">Next-gen tech, delivered fast</h2>
+                        <p class="promo__text">
+                            Shop the latest gadgets, accessories, and gaming gear with reliable shipping and daily offers.
+                        </p>
+                    </article>
+
+                    <article class="promo__stat-card">
+                        <strong class="promo__stat-number">5K+</strong>
+                        <span class="promo__stat-label">Products available</span>
+                    </article>
+
+                    <article class="promo__stat-card">
+                        <strong class="promo__stat-number">24/7</strong>
+                        <span class="promo__stat-label">Customer support</span>
+                    </article>
+
+                    <article class="promo__stat-card">
+                        <strong class="promo__stat-number">99%</strong>
+                        <span class="promo__stat-label">Happy customers</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories__container">
+                <div class="section-heading">
+                    <p class="section-heading__eyebrow">Top categories</p>
+                    <h2 class="section-heading__title">Find your next upgrade</h2>
+                </div>
+
+                <div class="categories__grid">
+                    <article class="categories__card">
+                        <span class="categories__icon">💻</span>
+                        <h3 class="categories__name">Laptops</h3>
+                        <p class="categories__text">Powerful machines for work, study, and gaming.</p>
+                    </article>
+
+                    <article class="categories__card">
+                        <span class="categories__icon">📱</span>
+                        <h3 class="categories__name">Phones</h3>
+                        <p class="categories__text">Flagship and budget smartphones for every need.</p>
+                    </article>
+
+                    <article class="categories__card">
+                        <span class="categories__icon">🎧</span>
+                        <h3 class="categories__name">Audio</h3>
+                        <p class="categories__text">Headphones, earbuds, speakers, and more.</p>
+                    </article>
+
+                    <article class="categories__card">
+                        <span class="categories__icon">⌚</span>
+                        <h3 class="categories__name">Wearables</h3>
+                        <p class="categories__text">Smartwatches and fitness tech for everyday life.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-banner">
+            <div class="ad-banner__container">
+                <div class="ad-banner__content">
+                    <p class="ad-banner__eyebrow">Limited-time deal</p>
+                    <h2 class="ad-banner__title">Save up to 40% on selected accessories</h2>
+                    <p class="ad-banner__text">
+                        Upgrade your setup with keyboards, mice, chargers, cases, and smart devices at special prices this week.
+                    </p>
+                    <div class="ad-banner__actions">
+                        <a href="#" class="ad-banner__button ad-banner__button--primary">Shop deals</a>
+                        <a href="#" class="ad-banner__button ad-banner__button--secondary">Learn more</a>
+                    </div>
+                </div>
+                <div class="ad-banner__badge">
+                    <span class="ad-banner__badge-label">From</span>
+                    <strong class="ad-banner__badge-price">$19</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="products__container">
+                <div class="section-heading">
+                    <p class="section-heading__eyebrow">Trending now</p>
+                    <h2 class="section-heading__title">Popular picks at Techy</h2>
+                </div>
+
+                <div class="products__grid" id="productsGrid"></div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__container">
+                <div class="section-heading">
+                    <p class="section-heading__eyebrow">Why Techy</p>
+                    <h2 class="section-heading__title">Built for modern tech shopping</h2>
+                </div>
+
+                <div class="features__grid">
+                    <article class="features__card">
+                        <h3 class="features__title">Trusted quality</h3>
+                        <p class="features__text">Carefully selected products from reliable brands and suppliers.</p>
+                    </article>
+
+                    <article class="features__card">
+                        <h3 class="features__title">Best-value deals</h3>
+                        <p class="features__text">Frequent promotions and competitive prices across top categories.</p>
+                    </article>
+
+                    <article class="features__card">
+                        <h3 class="features__title">Easy support</h3>
+                        <p class="features__text">Simple returns, friendly service, and smooth shopping experience.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <div class="footer__brand-block">
+                        <a href="#" class="footer__brand">
+                            <img
+                                src="./assets/images/techy-symbol.svg"
+                                alt="Techy logo"
+                                class="footer__logo"
+                            >
+                            <span class="footer__brand-text">Techy</span>
+                        </a>
+                        <p class="footer__description">
+                            Your trusted tech shop for gadgets, accessories, and smart deals every day.
+                        </p>
+                    </div>
+
+                    <div class="footer__links-group">
+                        <h3 class="footer__title">Shop</h3>
+                        <a href="#" class="footer__link">Laptops</a>
+                        <a href="#" class="footer__link">Phones</a>
+                        <a href="#" class="footer__link">Accessories</a>
+                        <a href="#" class="footer__link">Deals</a>
+                    </div>
+
+                    <div class="footer__links-group">
+                        <h3 class="footer__title">Company</h3>
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">Contact</a>
+                        <a href="#" class="footer__link">Support</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </div>
+
+                    <div class="footer__links-group">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__text">
+                            Get updates on new arrivals and exclusive offers.
+                        </p>
+                        <form class="footer__form" action="#">
+                            <input
+                                type="email"
+                                class="footer__input"
+                                placeholder="Enter your email"
+                            >
+                            <button type="submit" class="footer__button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        © 2026 Techy. All rights reserved.
+                    </p>
+                    <div class="footer__bottom-links">
+                        <a href="#" class="footer__bottom-link">Terms</a>
+                        <a href="#" class="footer__bottom-link">Privacy</a>
+                        <a href="#" class="footer__bottom-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/header.js"></script>
+    </body>
+</html>
