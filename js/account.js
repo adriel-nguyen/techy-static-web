@@ -20,7 +20,7 @@
     if (logoutButton) {
         logoutButton.addEventListener("click", function () {
             window.TechyAuth.signOut();
-            window.location.href = "./login.html";
+            window.location.href = window.TechyAuth.getLoginUrl("./account.html");
         });
     }
 })();
