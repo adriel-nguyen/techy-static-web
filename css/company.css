@@ -1,0 +1,133 @@
+.info-page {
+    padding: 40px 20px 0;
+}
+
+.info-page__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.info-page__hero,
+.info-page__section {
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.info-page__hero {
+    margin-bottom: 24px;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.16), rgba(255, 255, 255, 0.04));
+}
+
+.info-page__eyebrow {
+    margin-bottom: 12px;
+    color: var(--color-primary-light);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.info-page__title {
+    margin-bottom: 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+}
+
+.info-page__description {
+    max-width: 720px;
+    color: var(--color-muted);
+    line-height: 1.7;
+}
+
+.info-page__section {
+    padding: 32px;
+    margin-bottom: 20px;
+}
+
+.info-page__section-title {
+    margin-bottom: 14px;
+    font-size: 1.4rem;
+}
+
+.info-page__text {
+    color: var(--color-muted);
+    line-height: 1.8;
+}
+
+.info-page__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.info-page__card {
+    padding: 22px;
+    border: 1px solid var(--color-line);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.info-page__card-title {
+    margin-bottom: 8px;
+    font-size: 1.02rem;
+}
+
+.info-page__card-text,
+.info-page__list {
+    color: var(--color-muted);
+    line-height: 1.7;
+}
+
+.info-page__list {
+    padding-left: 20px;
+}
+
+.info-page__list li + li {
+    margin-top: 8px;
+}
+
+.info-page__contact-list {
+    display: grid;
+    gap: 14px;
+}
+
+.info-page__contact-item {
+    padding: 18px 20px;
+    border: 1px solid var(--color-line);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.info-page__contact-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--color-primary-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.info-page__contact-value {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+@media (max-width: 920px) {
+    .info-page__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-page__hero,
+    .info-page__section {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .info-page {
+        padding: 28px 16px 0;
+    }
+}

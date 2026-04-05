@@ -3,40 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Techy - Products</title>
+        <title>Techy - Contact</title>
         <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/footer.css">
-        <link rel="stylesheet" href="./css/products.css">
+        <link rel="stylesheet" href="./css/company.css">
     </head>
-    <body class="products-page">
+    <body class="contact-page">
         <header class="header header--scrolled" id="header">
             <div class="header__container">
                 <a href="./index.html" class="header__brand">
                     <img src="./assets/images/techy-symbol.svg" alt="Techy logo" class="header__logo">
                     <span class="header__brand-text">Techy</span>
                 </a>
-
                 <nav class="header__nav">
                     <a href="./index.html" class="header__nav-link">Home</a>
-                    <a href="./products.html" class="header__nav-link header__nav-link--active">Products</a>
+                    <a href="./products.html" class="header__nav-link">Products</a>
                     <a href="./products.html" class="header__nav-link">Deals</a>
                     <a href="./login.html" class="header__nav-link">Account</a>
                     <a href="./cart.html" class="header__nav-link">Cart</a>
                 </nav>
-
                 <div class="header__actions">
-                    <form class="header__search" action="#">
-                        <span class="header__search-icon">Search</span>
-                        <input
-                            type="text"
-                            class="header__search-input"
-                            id="catalogSearchInput"
-                            placeholder="Search gadgets..."
-                        >
-                    </form>
-
                     <a href="./cart.html" class="header__icon-link" aria-label="Cart">
                         <span class="header__icon-symbol">Cart</span>
                         <span class="header__cart-count" data-cart-count>0</span>
@@ -44,18 +32,8 @@
                     <button class="header__menu-button" type="button" id="menuBtn" aria-label="Open menu">Menu</button>
                 </div>
             </div>
-
             <div class="header__mobile-panel" id="mobilePanel">
                 <div class="header__mobile-inner">
-                    <form class="header__mobile-search" action="#">
-                        <input
-                            type="text"
-                            class="header__mobile-search-input"
-                            id="catalogSearchInputMobile"
-                            placeholder="Search gadgets..."
-                        >
-                    </form>
-
                     <div class="header__mobile-links">
                         <a href="./index.html" class="header__mobile-link">Home</a>
                         <a href="./products.html" class="header__mobile-link">Products</a>
@@ -67,35 +45,31 @@
             </div>
         </header>
 
-        <main class="catalog">
-            <section class="catalog__hero">
-                <div class="catalog__hero-container">
-                    <p class="catalog__eyebrow">All products</p>
-                    <h1 class="catalog__title">Browse the Techy catalog</h1>
-                    <p class="catalog__description">
-                        Explore the phones, audio gear, and accessories already defined in the store data.
-                    </p>
-                </div>
-            </section>
-
-            <section class="catalog__section">
-                <div class="catalog__container">
-                    <aside class="catalog__sidebar">
-                        <div class="catalog__filter-card">
-                            <p class="catalog__filter-label">Categories</p>
-                            <div class="catalog__filters" id="catalogFilters"></div>
+        <main class="info-page">
+            <div class="info-page__container">
+                <section class="info-page__hero">
+                    <p class="info-page__eyebrow">Contact</p>
+                    <h1 class="info-page__title">Reach the Techy team</h1>
+                    <p class="info-page__description">This project uses demo contact information, but the page is set up the way a real storefront support hub would be structured.</p>
+                </section>
+                <section class="info-page__section">
+                    <h2 class="info-page__section-title">Contact channels</h2>
+                    <div class="info-page__contact-list">
+                        <div class="info-page__contact-item">
+                            <span class="info-page__contact-label">Email</span>
+                            <a href="mailto:support@techy.demo" class="info-page__contact-value">support@techy.demo</a>
                         </div>
-                    </aside>
-
-                    <div class="catalog__content">
-                        <div class="catalog__toolbar">
-                            <p class="catalog__results" id="catalogResultsText">Loading products...</p>
+                        <div class="info-page__contact-item">
+                            <span class="info-page__contact-label">Phone</span>
+                            <a href="tel:+18005550199" class="info-page__contact-value">+1 (800) 555-0199</a>
                         </div>
-
-                        <div class="catalog__grid" id="catalogGrid"></div>
+                        <div class="info-page__contact-item">
+                            <span class="info-page__contact-label">Address</span>
+                            <span class="info-page__contact-value">123 Demo Street, Tech District, San Francisco, CA</span>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
 
         <footer class="footer">
@@ -106,11 +80,8 @@
                             <img src="./assets/images/techy-symbol.svg" alt="Techy logo" class="footer__logo">
                             <span class="footer__brand-text">Techy</span>
                         </a>
-                        <p class="footer__description">
-                            Your trusted tech shop for gadgets, accessories, and smart deals every day.
-                        </p>
+                        <p class="footer__description">Your trusted tech shop for gadgets, accessories, and smart deals every day.</p>
                     </div>
-
                     <div class="footer__links-group">
                         <h3 class="footer__title">Shop</h3>
                         <a href="./products.html?category=Laptops" class="footer__link">Laptops</a>
@@ -118,7 +89,6 @@
                         <a href="./products.html?category=Accessories" class="footer__link">Accessories</a>
                         <a href="./products.html?badge=deal" class="footer__link">Deals</a>
                     </div>
-
                     <div class="footer__links-group">
                         <h3 class="footer__title">Company</h3>
                         <a href="./about.html" class="footer__link">About</a>
@@ -126,7 +96,6 @@
                         <a href="./support.html" class="footer__link">Support</a>
                         <a href="./privacy.html" class="footer__link">Privacy Policy</a>
                     </div>
-
                     <div class="footer__links-group">
                         <h3 class="footer__title">Newsletter</h3>
                         <p class="footer__text">Get updates on new arrivals and exclusive offers.</p>
@@ -136,7 +105,6 @@
                         </form>
                     </div>
                 </div>
-
                 <div class="footer__bottom">
                     <p class="footer__copyright">© 2026 Techy. All rights reserved.</p>
                     <div class="footer__bottom-links">
@@ -151,6 +119,5 @@
         <script src="./js/catalog-data.js"></script>
         <script src="./js/store.js"></script>
         <script src="./js/header.js"></script>
-        <script src="./js/products.js"></script>
     </body>
 </html>
