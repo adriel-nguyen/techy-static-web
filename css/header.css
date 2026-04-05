@@ -82,6 +82,92 @@
     gap: 12px;
 }
 
+.header__profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    padding: 8px 12px;
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    background: var(--color-surface);
+}
+
+.header__profile--mobile {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: var(--radius-md);
+    justify-content: space-between;
+}
+
+.header__profile-avatar {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.header__profile-meta {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__profile-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.header__profile-email {
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header__profile-select {
+    min-width: 96px;
+    padding: 9px 12px;
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    background: #162338;
+    color: var(--color-text);
+    font: inherit;
+    cursor: pointer;
+}
+
+.header__login-link,
+.header__mobile-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 16px;
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 700;
+    transition: var(--transition-base);
+}
+
+.header__mobile-login {
+    width: 100%;
+    margin-top: 16px;
+}
+
 .header__search {
     display: flex;
     align-items: center;
@@ -162,7 +248,10 @@
 .header__icon-button:hover,
 .header__icon-link:hover,
 .header__menu-button:hover,
-.header__menu-button--active {
+.header__menu-button--active,
+.header__login-link:hover,
+.header__mobile-login:hover,
+.header__profile-select:hover {
     background: rgba(30, 144, 255, 0.16);
     border-color: rgba(82, 182, 255, 0.45);
 }
@@ -225,6 +314,10 @@
     .header__search,
     .header__icon-button,
     .header__icon-link {
+        display: none;
+    }
+
+    .header__profile {
         display: none;
     }
 

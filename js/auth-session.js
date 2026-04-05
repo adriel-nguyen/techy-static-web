@@ -35,6 +35,11 @@
         localStorage.removeItem(STORAGE_KEY);
     }
 
+    function getCurrentRelativeUrl() {
+        const currentPath = window.location.pathname.split("/").pop() || "index.html";
+        return "./" + currentPath + window.location.search;
+    }
+
     function getRedirectUrl() {
         const params = new URLSearchParams(window.location.search);
         const redirect = params.get("redirect");
@@ -50,14 +55,17 @@
         return redirect;
     }
 
+    function getLoginUrl(redirectPath) {
+        const target = redirectPath || getCurrentRelativeUrl();
+        return "./login.html?redirect=" + encodeURIComponent(target);
+    }
+
     function requireAuth() {
         if (isAuthenticated()) {
             return true;
         }
 
-        const currentPath = window.location.pathname.split("/").pop() || "index.html";
-        const redirect = encodeURIComponent("./" + currentPath + window.location.search);
-        window.location.replace("./login.html?redirect=" + redirect);
+        window.location.replace(getLoginUrl());
         return false;
     }
 
@@ -73,6 +81,8 @@
     window.TechyAuth = {
         demoEmail: DEMO_EMAIL,
         demoPassword: DEMO_PASSWORD,
+        getCurrentRelativeUrl: getCurrentRelativeUrl,
+        getLoginUrl: getLoginUrl,
         getRedirectUrl: getRedirectUrl,
         getSession: getSession,
         isAuthenticated: isAuthenticated,
