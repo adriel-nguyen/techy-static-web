@@ -19,7 +19,8 @@ function getCatalogQueryState() {
 
     return {
         category: params.get("category") || "all",
-        badge: params.get("badge") || ""
+        badge: params.get("badge") || "",
+        search: params.get("search") || ""
     };
 }
 
@@ -178,6 +179,8 @@ async function initializeProductsPage() {
 
         catalogState.activeCategory = hasMatchingCategory ? queryState.category : "all";
         catalogState.activeBadgeFilter = queryState.badge;
+        catalogState.searchTerm = queryState.search.trim();
+        syncSearchInputs(catalogState.searchTerm);
 
         renderCatalogFilters();
         renderCatalogProducts();
