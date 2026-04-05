@@ -382,6 +382,7 @@
         height: auto;
         min-height: 100svh;
         padding: 16px;
+        align-items: flex-start;
     }
 
     .auth__container {
@@ -390,8 +391,13 @@
         grid-template-columns: 1fr;
     }
 
+    .auth__intro {
+        display: none;
+    }
+
     .auth__panel {
         overflow: visible;
+        min-height: calc(100svh - 32px);
     }
 }
 
