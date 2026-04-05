@@ -3,14 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Techy - Privacy Policy</title>
+        <title>Techy - Account</title>
         <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
+        <script src="./js/auth-session.js"></script>
+        <script>
+            window.TechyAuth.requireAuth();
+        </script>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/footer.css">
-        <link rel="stylesheet" href="./css/company.css">
+        <link rel="stylesheet" href="./css/account.css">
     </head>
-    <body class="privacy-page">
+    <body class="account-page">
         <header class="header header--scrolled" id="header">
             <div class="header__container">
                 <a href="./index.html" class="header__brand">
@@ -21,7 +25,7 @@
                     <a href="./index.html" class="header__nav-link">Home</a>
                     <a href="./products.html" class="header__nav-link">Products</a>
                     <a href="./deals.html" class="header__nav-link">Deals</a>
-                    <a href="./account.html" class="header__nav-link">Account</a>
+                    <a href="./account.html" class="header__nav-link header__nav-link--active">Account</a>
                     <a href="./cart.html" class="header__nav-link">Cart</a>
                 </nav>
                 <div class="header__actions">
@@ -45,21 +49,48 @@
             </div>
         </header>
 
-        <main class="info-page">
-            <div class="info-page__container">
-                <section class="info-page__hero">
-                    <p class="info-page__eyebrow">Privacy Policy</p>
-                    <h1 class="info-page__title">A simple explanation of what this demo stores</h1>
-                    <p class="info-page__description">Techy is a frontend demo. It does not use a real backend or payment processor, and the main stored data in this project is browser-side state such as cart contents and demo sign-in session data.</p>
+        <main class="account-main">
+            <div class="account-main__container">
+                <section class="account-page__hero">
+                    <p class="account-page__eyebrow">Account</p>
+                    <h1 class="account-page__title">Your Techy demo profile</h1>
+                    <p class="account-page__description">
+                        This page gives the navigation a real account destination and shows the fake session currently stored in the browser.
+                    </p>
                 </section>
-                <section class="info-page__section">
-                    <h2 class="info-page__section-title">Data handling in this demo</h2>
-                    <ul class="info-page__list">
-                        <li>Cart items are stored in `localStorage` on your device.</li>
-                        <li>The demo sign-in session is also stored in `localStorage`.</li>
-                        <li>No real payment, shipping, or customer data is submitted to a backend.</li>
-                        <li>Country-code lookup on the auth page may request external country metadata when available.</li>
-                    </ul>
+
+                <section class="account-page__grid">
+                    <article class="account-page__card">
+                        <h2 class="account-page__card-title">Profile details</h2>
+                        <div class="account-page__details">
+                            <div class="account-page__detail">
+                                <span class="account-page__label">Display Name</span>
+                                <span class="account-page__value" id="accountName">Admin</span>
+                            </div>
+                            <div class="account-page__detail">
+                                <span class="account-page__label">Email</span>
+                                <span class="account-page__value" id="accountEmail">admin@example.com</span>
+                            </div>
+                            <div class="account-page__detail">
+                                <span class="account-page__label">Access Level</span>
+                                <span class="account-page__value">Demo account</span>
+                            </div>
+                        </div>
+                        <div class="account-page__actions">
+                            <a href="./products.html" class="account-page__button account-page__button--secondary">Browse products</a>
+                            <button type="button" class="account-page__button account-page__button--primary" id="logoutButton">Log out</button>
+                        </div>
+                    </article>
+
+                    <aside class="account-page__card">
+                        <h2 class="account-page__card-title">Demo notes</h2>
+                        <ul class="account-page__list">
+                            <li>This account is client-side only.</li>
+                            <li>The active session is stored in `localStorage`.</li>
+                            <li>Logging out clears the fake session and returns you to the login page.</li>
+                            <li>The sign-in credentials remain `admin@example.com` and `123456`.</li>
+                        </ul>
+                    </aside>
                 </section>
             </div>
         </main>
@@ -111,5 +142,6 @@
         <script src="./js/catalog-data.js"></script>
         <script src="./js/store.js"></script>
         <script src="./js/header.js"></script>
+        <script src="./js/account.js"></script>
     </body>
 </html>

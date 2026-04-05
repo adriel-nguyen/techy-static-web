@@ -147,12 +147,16 @@
     min-width: 20px;
     min-height: 20px;
     padding: 2px 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 999px;
     background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
     color: #ffffff;
     font-size: 0.7rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1;
+    text-align: center;
 }
 
 .header__icon-button:hover,
