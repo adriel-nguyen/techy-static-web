@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Techy - Privacy Policy</title>
+        <title>Techy - Deals</title>
         <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/company.css">
     </head>
-    <body class="privacy-page">
+    <body class="deals-page">
         <header class="header header--scrolled" id="header">
             <div class="header__container">
                 <a href="./index.html" class="header__brand">
@@ -20,7 +20,7 @@
                 <nav class="header__nav">
                     <a href="./index.html" class="header__nav-link">Home</a>
                     <a href="./products.html" class="header__nav-link">Products</a>
-                    <a href="./deals.html" class="header__nav-link">Deals</a>
+                    <a href="./deals.html" class="header__nav-link header__nav-link--active">Deals</a>
                     <a href="./account.html" class="header__nav-link">Account</a>
                     <a href="./cart.html" class="header__nav-link">Cart</a>
                 </nav>
@@ -48,18 +48,32 @@
         <main class="info-page">
             <div class="info-page__container">
                 <section class="info-page__hero">
-                    <p class="info-page__eyebrow">Privacy Policy</p>
-                    <h1 class="info-page__title">A simple explanation of what this demo stores</h1>
-                    <p class="info-page__description">Techy is a frontend demo. It does not use a real backend or payment processor, and the main stored data in this project is browser-side state such as cart contents and demo sign-in session data.</p>
+                    <p class="info-page__eyebrow">Deals</p>
+                    <h1 class="info-page__title">This week’s best tech offers in one place</h1>
+                    <p class="info-page__description">
+                        Browse the most attractive discounts in the current demo catalog. This page gives the navigation a proper deals destination instead of reusing the general products page.
+                    </p>
                 </section>
+
                 <section class="info-page__section">
-                    <h2 class="info-page__section-title">Data handling in this demo</h2>
-                    <ul class="info-page__list">
-                        <li>Cart items are stored in `localStorage` on your device.</li>
-                        <li>The demo sign-in session is also stored in `localStorage`.</li>
-                        <li>No real payment, shipping, or customer data is submitted to a backend.</li>
-                        <li>Country-code lookup on the auth page may request external country metadata when available.</li>
-                    </ul>
+                    <h2 class="info-page__section-title">Featured savings</h2>
+                    <div class="info-page__grid">
+                        <article class="info-page__card">
+                            <h3 class="info-page__card-title">Hot phone discounts</h3>
+                            <p class="info-page__card-text">Check flagship phone offers and compare the strongest markdowns in the current lineup.</p>
+                            <p class="info-page__text"><a href="./products.html?badge=deal">View deal products</a></p>
+                        </article>
+                        <article class="info-page__card">
+                            <h3 class="info-page__card-title">Accessory bundle value</h3>
+                            <p class="info-page__card-text">Chargers, audio gear, and everyday add-ons are the easiest place to spot strong percentage savings.</p>
+                            <p class="info-page__text"><a href="./products.html?category=Accessories">Shop accessories</a></p>
+                        </article>
+                        <article class="info-page__card">
+                            <h3 class="info-page__card-title">Laptop picks</h3>
+                            <p class="info-page__card-text">Browse performance laptops and compare premium models that still carry clear promotional pricing.</p>
+                            <p class="info-page__text"><a href="./products.html?category=Laptops">Browse laptops</a></p>
+                        </article>
+                    </div>
                 </section>
             </div>
         </main>
