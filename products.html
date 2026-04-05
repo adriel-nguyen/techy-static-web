@@ -27,12 +27,13 @@
                 </nav>
 
                 <div class="header__actions">
-                    <form class="header__search" action="#">
+                    <form class="header__search" action="./products.html" method="get">
                         <span class="header__search-icon">Search</span>
                         <input
                             type="text"
                             class="header__search-input"
                             id="catalogSearchInput"
+                            name="search"
                             placeholder="Search gadgets..."
                         >
                     </form>
@@ -47,11 +48,12 @@
 
             <div class="header__mobile-panel" id="mobilePanel">
                 <div class="header__mobile-inner">
-                    <form class="header__mobile-search" action="#">
+                    <form class="header__mobile-search" action="./products.html" method="get">
                         <input
                             type="text"
                             class="header__mobile-search-input"
                             id="catalogSearchInputMobile"
+                            name="search"
                             placeholder="Search gadgets..."
                         >
                     </form>
