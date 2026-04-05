@@ -8,6 +8,10 @@ const registerForm = document.getElementById("registerForm");
 
 const countrySelectIds = ["loginCountryCode", "registerCountryCode"];
 
+if (window.TechyAuth) {
+    window.TechyAuth.redirectIfAuthenticated();
+}
+
 authTabs.forEach(function (tab) {
     tab.addEventListener("click", function () {
         authTabs.forEach(function (item) {
@@ -262,7 +266,23 @@ function validateLoginForm(event) {
     }
 
     if (isValid) {
-        console.log("Login form valid");
+        if (mode !== "email") {
+            setError("loginPhoneError", "The demo account only supports email login.");
+            markInvalid(loginCountryCode, true);
+            markInvalid(loginPhone, true);
+            return;
+        }
+
+        const didLogin = window.TechyAuth && window.TechyAuth.signIn(loginEmail.value, loginPassword.value);
+
+        if (!didLogin) {
+            setError("loginPasswordError", "Use admin@example.com and 123456 to sign in.");
+            markInvalid(loginEmail, true);
+            markInvalid(loginPassword, true);
+            return;
+        }
+
+        window.location.href = window.TechyAuth.getRedirectUrl();
     }
 }
 
@@ -356,7 +376,7 @@ function validateRegisterForm(event) {
     }
 
     if (isValid) {
-        console.log("Register form valid");
+        setError("registerTermsError", "Registration is disabled in this demo. Use admin@example.com and 123456.");
     }
 }
 

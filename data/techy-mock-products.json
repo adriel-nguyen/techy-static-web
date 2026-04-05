@@ -85,6 +85,48 @@
       "badge": "Value Pick",
       "image": "./assets/images/products/anker-67w-gan.png",
       "description": "Compact fast charger for phones, tablets, and lightweight laptops."
+    },
+    {
+      "id": "lp-001",
+      "name": "MacBook Air 13 M3",
+      "category": "Laptops",
+      "brand": "Apple",
+      "price": 1099,
+      "originalPrice": 1199,
+      "discountPercent": 8,
+      "rating": 4.8,
+      "stock": 14,
+      "badge": "Lightweight",
+      "image": "./assets/images/products/macbook-air-13-m3.png",
+      "description": "Thin and portable laptop with strong battery life and fast Apple silicon performance."
+    },
+    {
+      "id": "lp-002",
+      "name": "MacBook Air 15 M3",
+      "category": "Laptops",
+      "brand": "Apple",
+      "price": 1299,
+      "originalPrice": 1399,
+      "discountPercent": 7,
+      "rating": 4.9,
+      "stock": 10,
+      "badge": "Big Display",
+      "image": "./assets/images/products/macbook-air-15-m3.png",
+      "description": "Large-screen MacBook Air built for study, work, and everyday multitasking on the go."
+    },
+    {
+      "id": "lp-003",
+      "name": "MacBook Pro 14 M3 Pro",
+      "category": "Laptops",
+      "brand": "Apple",
+      "price": 1999,
+      "originalPrice": 2199,
+      "discountPercent": 9,
+      "rating": 4.9,
+      "stock": 7,
+      "badge": "Pro Power",
+      "image": "./assets/images/products/macbook-pro-14-m3-pro.png",
+      "description": "High-performance MacBook Pro for demanding creative workloads, coding, and pro-level productivity."
     }
   ],
   "categories": [

@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Techy - Homepage</title>
         <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
-        
+        <script src="./js/auth-session.js"></script>
+        <script>
+            window.TechyAuth.requireAuth();
+        </script>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/footer.css">
@@ -13,7 +16,7 @@
     <body>
         <header class="header" id="header">
             <div class="header__container">
-                <a href="#" class="header__brand">
+                <a href="./index.html" class="header__brand">
                     <img
                         src="./assets/images/techy-symbol.svg"
                         alt="Techy logo"
@@ -23,16 +26,16 @@
                 </a>
 
                 <nav class="header__nav">
-                    <a href="#" class="header__nav-link header__nav-link--active">Home</a>
-                    <a href="#" class="header__nav-link">Products</a>
-                    <a href="#" class="header__nav-link">Deals</a>
-                    <a href="#" class="header__nav-link">About</a>
-                    <a href="#" class="header__nav-link">Contact</a>
+                    <a href="./index.html" class="header__nav-link header__nav-link--active">Home</a>
+                    <a href="./products.html" class="header__nav-link">Products</a>
+                    <a href="./products.html" class="header__nav-link">Deals</a>
+                    <a href="./login.html" class="header__nav-link">Account</a>
+                    <a href="./cart.html" class="header__nav-link">Cart</a>
                 </nav>
 
                 <div class="header__actions">
                     <form class="header__search" action="#">
-                        <span class="header__search-icon">⌕</span>
+                        <span class="header__search-icon">Search</span>
                         <input
                             type="text"
                             class="header__search-input"
@@ -40,8 +43,11 @@
                         >
                     </form>
 
-                    <button class="header__icon-button" type="button" aria-label="Cart">🛒</button>
-                    <button class="header__menu-button" type="button" id="menuBtn" aria-label="Open menu">☰</button>
+                    <a href="./cart.html" class="header__icon-link" aria-label="Cart">
+                        <span class="header__icon-symbol">Cart</span>
+                        <span class="header__cart-count" data-cart-count>0</span>
+                    </a>
+                    <button class="header__menu-button" type="button" id="menuBtn" aria-label="Open menu">Menu</button>
                 </div>
             </div>
 
@@ -56,11 +62,11 @@
                     </form>
 
                     <div class="header__mobile-links">
-                        <a href="#" class="header__mobile-link">Home</a>
-                        <a href="#" class="header__mobile-link">Products</a>
-                        <a href="#" class="header__mobile-link">Deals</a>
-                        <a href="#" class="header__mobile-link">About</a>
-                        <a href="#" class="header__mobile-link">Contact</a>
+                        <a href="./index.html" class="header__mobile-link">Home</a>
+                        <a href="./products.html" class="header__mobile-link">Products</a>
+                        <a href="./products.html" class="header__mobile-link">Deals</a>
+                        <a href="./login.html" class="header__mobile-link">Account</a>
+                        <a href="./cart.html" class="header__mobile-link">Cart</a>
                     </div>
                 </div>
             </div>
@@ -75,8 +81,8 @@
                         Discover gadgets, accessories, and daily tech deals in a clean modern shopping experience.
                     </p>
                     <div class="hero__actions">
-                        <a href="#" class="hero__button hero__button--primary">Shop now</a>
-                        <a href="#" class="hero__button hero__button--secondary">View deals</a>
+                        <a href="./products.html" class="hero__button hero__button--primary">Shop now</a>
+                        <a href="./products.html" class="hero__button hero__button--secondary">View deals</a>
                     </div>
                 </div>
             </div>
@@ -120,25 +126,25 @@
 
                 <div class="categories__grid">
                     <article class="categories__card">
-                        <span class="categories__icon">💻</span>
+                        <span class="categories__icon">LP</span>
                         <h3 class="categories__name">Laptops</h3>
                         <p class="categories__text">Powerful machines for work, study, and gaming.</p>
                     </article>
 
                     <article class="categories__card">
-                        <span class="categories__icon">📱</span>
+                        <span class="categories__icon">PH</span>
                         <h3 class="categories__name">Phones</h3>
                         <p class="categories__text">Flagship and budget smartphones for every need.</p>
                     </article>
 
                     <article class="categories__card">
-                        <span class="categories__icon">🎧</span>
+                        <span class="categories__icon">AU</span>
                         <h3 class="categories__name">Audio</h3>
                         <p class="categories__text">Headphones, earbuds, speakers, and more.</p>
                     </article>
 
                     <article class="categories__card">
-                        <span class="categories__icon">⌚</span>
+                        <span class="categories__icon">WR</span>
                         <h3 class="categories__name">Wearables</h3>
                         <p class="categories__text">Smartwatches and fitness tech for everyday life.</p>
                     </article>
@@ -155,8 +161,8 @@
                         Upgrade your setup with keyboards, mice, chargers, cases, and smart devices at special prices this week.
                     </p>
                     <div class="ad-banner__actions">
-                        <a href="#" class="ad-banner__button ad-banner__button--primary">Shop deals</a>
-                        <a href="#" class="ad-banner__button ad-banner__button--secondary">Learn more</a>
+                        <a href="./products.html" class="ad-banner__button ad-banner__button--primary">Shop deals</a>
+                        <a href="./products.html" class="ad-banner__button ad-banner__button--secondary">Learn more</a>
                     </div>
                 </div>
                 <div class="ad-banner__badge">
@@ -177,7 +183,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="aboutSection">
             <div class="features__container">
                 <div class="section-heading">
                     <p class="section-heading__eyebrow">Why Techy</p>
@@ -203,11 +209,11 @@
             </div>
         </section>
 
-        <footer class="footer">
+        <footer class="footer" id="contactSection">
             <div class="footer__container">
                 <div class="footer__top">
                     <div class="footer__brand-block">
-                        <a href="#" class="footer__brand">
+                        <a href="./index.html" class="footer__brand">
                             <img
                                 src="./assets/images/techy-symbol.svg"
                                 alt="Techy logo"
@@ -222,18 +228,18 @@
 
                     <div class="footer__links-group">
                         <h3 class="footer__title">Shop</h3>
-                        <a href="#" class="footer__link">Laptops</a>
-                        <a href="#" class="footer__link">Phones</a>
-                        <a href="#" class="footer__link">Accessories</a>
-                        <a href="#" class="footer__link">Deals</a>
+                        <a href="./products.html?category=Laptops" class="footer__link">Laptops</a>
+                        <a href="./products.html?category=Phones" class="footer__link">Phones</a>
+                        <a href="./products.html?category=Accessories" class="footer__link">Accessories</a>
+                        <a href="./products.html?badge=deal" class="footer__link">Deals</a>
                     </div>
 
                     <div class="footer__links-group">
                         <h3 class="footer__title">Company</h3>
-                        <a href="#" class="footer__link">About</a>
-                        <a href="#" class="footer__link">Contact</a>
-                        <a href="#" class="footer__link">Support</a>
-                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="./index.html#aboutSection" class="footer__link">About</a>
+                        <a href="./index.html#contactSection" class="footer__link">Contact</a>
+                        <a href="./products.html" class="footer__link">Support</a>
+                        <a href="./index.html#contactSection" class="footer__link">Privacy Policy</a>
                     </div>
 
                     <div class="footer__links-group">
@@ -253,18 +259,19 @@
                 </div>
 
                 <div class="footer__bottom">
-                    <p class="footer__copyright">
-                        © 2026 Techy. All rights reserved.
-                    </p>
+                    <p class="footer__copyright">© 2026 Techy. All rights reserved.</p>
                     <div class="footer__bottom-links">
-                        <a href="#" class="footer__bottom-link">Terms</a>
-                        <a href="#" class="footer__bottom-link">Privacy</a>
-                        <a href="#" class="footer__bottom-link">Cookies</a>
+                        <a href="./login.html" class="footer__bottom-link">Terms</a>
+                        <a href="./login.html" class="footer__bottom-link">Privacy</a>
+                        <a href="./login.html" class="footer__bottom-link">Cookies</a>
                     </div>
                 </div>
             </div>
         </footer>
 
+        <script src="./js/catalog-data.js"></script>
+        <script src="./js/store.js"></script>
         <script src="./js/header.js"></script>
+        <script src="./js/home.js"></script>
     </body>
 </html>

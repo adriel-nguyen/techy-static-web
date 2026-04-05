@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Techy - Product Details</title>
+        <link rel="icon" type="image/svg+xml" href="./assets/images/techy-favicon.svg">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/product-details.css">
+    </head>
+    <body class="product-details-page">
+        <header class="header header--scrolled" id="header">
+            <div class="header__container">
+                <a href="./index.html" class="header__brand">
+                    <img src="./assets/images/techy-symbol.svg" alt="Techy logo" class="header__logo">
+                    <span class="header__brand-text">Techy</span>
+                </a>
+
+                <nav class="header__nav">
+                    <a href="./index.html" class="header__nav-link">Home</a>
+                    <a href="./products.html" class="header__nav-link header__nav-link--active">Products</a>
+                    <a href="./products.html" class="header__nav-link">Deals</a>
+                    <a href="./login.html" class="header__nav-link">Account</a>
+                    <a href="./cart.html" class="header__nav-link">Cart</a>
+                </nav>
+
+                <div class="header__actions">
+                    <a href="./cart.html" class="header__icon-link" aria-label="Cart">
+                        <span class="header__icon-symbol">Cart</span>
+                        <span class="header__cart-count" data-cart-count>0</span>
+                    </a>
+                    <button class="header__menu-button" type="button" id="menuBtn" aria-label="Open menu">Menu</button>
+                </div>
+            </div>
+
+            <div class="header__mobile-panel" id="mobilePanel">
+                <div class="header__mobile-inner">
+                    <div class="header__mobile-links">
+                        <a href="./index.html" class="header__mobile-link">Home</a>
+                        <a href="./products.html" class="header__mobile-link">Products</a>
+                        <a href="./products.html" class="header__mobile-link">Deals</a>
+                        <a href="./login.html" class="header__mobile-link">Account</a>
+                        <a href="./cart.html" class="header__mobile-link">Cart</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="product-view">
+            <section class="product-view__section">
+                <div class="product-view__container" id="productView"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <div class="footer__brand-block">
+                        <a href="./index.html" class="footer__brand">
+                            <img src="./assets/images/techy-symbol.svg" alt="Techy logo" class="footer__logo">
+                            <span class="footer__brand-text">Techy</span>
+                        </a>
+                        <p class="footer__description">
+                            Your trusted tech shop for gadgets, accessories, and smart deals every day.
+                        </p>
+                    </div>
+
+                    <div class="footer__links-group">
+                        <h3 class="footer__title">Shop</h3>
+                        <a href="./products.html?category=Laptops" class="footer__link">Laptops</a>
+                        <a href="./products.html?category=Phones" class="footer__link">Phones</a>
+                        <a href="./products.html?category=Accessories" class="footer__link">Accessories</a>
+                        <a href="./products.html?badge=deal" class="footer__link">Deals</a>
+                    </div>
+
+                    <div class="footer__links-group">
+                        <h3 class="footer__title">Company</h3>
+                        <a href="./index.html#aboutSection" class="footer__link">About</a>
+                        <a href="./index.html#contactSection" class="footer__link">Contact</a>
+                        <a href="./products.html" class="footer__link">Support</a>
+                        <a href="./index.html#contactSection" class="footer__link">Privacy Policy</a>
+                    </div>
+
+                    <div class="footer__links-group">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__text">Get updates on new arrivals and exclusive offers.</p>
+                        <form class="footer__form" action="#">
+                            <input type="email" class="footer__input" placeholder="Enter your email">
+                            <button type="submit" class="footer__button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2026 Techy. All rights reserved.</p>
+                    <div class="footer__bottom-links">
+                        <a href="./login.html" class="footer__bottom-link">Terms</a>
+                        <a href="./login.html" class="footer__bottom-link">Privacy</a>
+                        <a href="./login.html" class="footer__bottom-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/catalog-data.js"></script>
+        <script src="./js/store.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/product-details.js"></script>
+    </body>
+</html>
